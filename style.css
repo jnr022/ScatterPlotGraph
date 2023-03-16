@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+h1 {
+  margin-top: 80px;
+}
+
+h2{
+ margin-top: -10px;
+}
+
+svg {
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+.container {
+  position: relative;
+}
+.tooltip {
+ 
+  background-color: #eaeaea;
+  display: none;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+ 
+  position: absolute;
+  
+  z-index: 100;
+  font-size: 14px;
+  padding: 10px;
+}
+
+
+.tooltip.show {
+  display: block;
+}
+.tooltip small {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.legend {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size:12px;
+  text-align: right;
+  padding: 20px;
+}
+
+.legend .text {
+  margin: 10px;
+  position: relative;
+  min-width: 200px;
+  padding-right: 30px;
+}
+
+.legend .box {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 0;
+  top: -3px;
+}
+
+.legend .box.orange {
+  background-color: orange;
+}
+
+.legend .box.blue {
+  background-color: blue;
+ 
+}
